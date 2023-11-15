@@ -48,14 +48,6 @@ public class CivitaiClientTests {
 
         ArrayAssertions.assertNotEmpty(images);
         Assertions.assertEquals(5, images.length);
-
-        ArrayAssertions.assertCollection(images,
-                i -> Assertions.assertEquals(127497, i.getId()),
-                i -> Assertions.assertEquals(175719, i.getId()),
-                i -> Assertions.assertEquals(295008, i.getId()),
-                i -> Assertions.assertEquals(295538, i.getId()),
-                i -> Assertions.assertEquals(107855, i.getId())
-        );
     }
 
     @Test

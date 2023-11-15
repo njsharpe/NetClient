@@ -17,7 +17,10 @@ public class ModelVersion {
     private Date updatedAt;
     private String[] trainedWords;
     private String trainingStatus;
-    private String trainingDetails;
+
+    // FIXME: Waiting on API reference to expose structure of object
+    private transient String trainingDetails;
+
     private String baseModel;
     private String baseModelType;
     private long earlyAccessTimeFrame;
